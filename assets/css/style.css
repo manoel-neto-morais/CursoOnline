@@ -83,6 +83,15 @@ body {
     width: 25vh;
 }
 
+.btn_nav a {
+    font-family: 'Acme', sans-serif;
+    /* cada li será colocado definidos como blocos em linha*/
+    color: white;
+    text-decoration: none;
+    padding: 0px;
+    height: auto;
+}
+
 .btn_nav:hover {
     background: linear-gradient(60deg, #95eb99, #54cc5a);
     opacity: 1;
@@ -100,7 +109,7 @@ body {
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
     border-radius: 7px;
-    min-width: 140vh;
+    min-width: 100%;
 }
 
 .card_corpo {
