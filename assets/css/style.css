@@ -695,12 +695,27 @@ p.quadro {
 .navbar .navbar-expand-lg .bg-secondary {
     background: none !important;
 }
+.calibra {
+    zoom: 0.7;
+}
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .calibra {
+        zoom: 1;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .calibra {
+        zoom: 1;
+    }
+}
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .calibra {
+        zoom: 1;
+    }
+}
