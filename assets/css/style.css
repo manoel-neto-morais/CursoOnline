@@ -93,6 +93,28 @@ body {
     box-shadow: 0px 0px 4px 1px #43a047;
 }
 
+.card_head {
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+    box-shadow: 2px 2px 2px rgb(75, 74, 74);
+    z-index: 1;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    min-width: 140vh;
+}
+
+.card_corpo {
+    border-radius: 6%;
+    box-shadow: 2px 2px 2px rgb(75, 74, 74);
+    z-index: 0;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    position: relative;
+    top: -30px;
+    background-color: white;
+}
+
 
 /*TIPOGRAFIA*/
 
@@ -131,13 +153,12 @@ body {
     box-shadow: 1px 1px 1px #BDBDBD;
     margin-left: 0px;
     padding: 2px;
-    margin: 4px;
 }
 
 
 /* CONFIGURAÇÃO DE CONTEÚDO */
 
-main {
+.conteudo {
     background-color: rgba(216, 215, 215, 0.904);
     background-image: url("../img/HORIZONTAL.png");
     opacity: .8;
@@ -145,29 +166,20 @@ main {
     border: 1px solid #BDBDBD;
     box-shadow: 1px 1px 1px #BDBDBD;
     text-align: justify;
-    margin-left: 0px 0px 30px 0px;
-    margin-top: 40px;
 }
 
-main p {
+.conteudo p {
     margin: 0 0 1.0em 0;
     line-height: 1.5em;
-    text-align: justify;
-    text-indent: 2.0em;
-    font-size: 16pt !important;
 }
 
-main a {
+.conteudo a {
     color: #47a34b;
     font-size: 16pt !important;
     font-weight: bold;
 }
 
-div#zoom {
-    zoom: 1;
-}
-
-main h1 {
+.conteudo h1 {
     font-family: 'Amaranth', sans-serif;
     font-size: 24pt;
     text-transform: uppercase;
@@ -179,7 +191,7 @@ main h1 {
     background: linear-gradient(60deg, #66bb6a, #43a047);
 }
 
-main h3 {
+.conteudo h3 {
     font-family: 'Acme', sans-serif;
     font-size: 28pt;
     text-transform: uppercase;
