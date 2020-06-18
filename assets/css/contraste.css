@@ -22,22 +22,18 @@
 
 -------------------------------*/
 
-nav#menu h1 {
-    font-family: 'Acme', sans-serif;
-}
-
-ul#menu_nav li {
+.nav_menu li {
     font-family: 'Acme', sans-serif;
     display: block;
+    /* cada li será colocado definidos como blocos em linha*/
     background: linear-gradient(60deg, #b9b8b8, #3d3d3d);
     margin: 4px;
     color: white;
-    font-weight: bolder;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid black;
     text-transform: uppercase;
 }
 
-ul#menu_nav li:hover {
+.nav_menu li:hover {
     /*configuração do todos os li (nesse caso, usamos o li para marcar cada menu) */
     background: none;
     background-color: white;
@@ -46,16 +42,65 @@ ul#menu_nav li:hover {
     font-weight: bold;
 }
 
-ul#menu_nav a {
+.nav_menu a {
     /* configuração dos links*/
     color: #ffffff;
     text-decoration: none;
 }
 
-ul#menu_nav a:hover {
+.nav_menu:hover {
     /*configuração dos links ao passar o mause*/
     transition: 1s;
     color: rgb(0, 0, 0);
+}
+
+.nav_menu a:hover {
+    /* configuração dos links*/
+    transition: 1s;
+    color: rgb(0, 0, 0);
+}
+
+
+/*TIPOGRAFIA*/
+
+.menu_principal h1 {
+    font-family: 'Acme', sans-serif;
+    font-size: 22pt;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #BDBDBD;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.menu_principal h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    margin-right: 10px;
+    color: white;
+}
+
+.borda_suave {
+    border-bottom: 1px solid #BDBDBD;
+    box-shadow: 1px 1px 1px #BDBDBD;
+    border-right: 1px solid #BDBDBD;
+}
+
+
+/*MENU DE NAVEGAÇÃO*/
+
+.menu_principal {
+    background-color: rgb(58, 57, 57);
+    ;
+    border: 1px solid #BDBDBD;
+    box-shadow: 1px 1px 1px #BDBDBD;
+    margin-left: 0px;
+    padding: 2px;
+    margin: 4px;
 }
 
 .btn_nav {
@@ -75,45 +120,36 @@ ul#menu_nav a:hover {
     color: #6E6E6E;
     font-weight: bold;
     transition: .5s;
-    box-shadow: 0px 0px 4px 1px #43a047;
+    box-shadow: 0px 0px 4px 1px #ffffff;
 }
 
 
 /*TIPOGRAFIA*/
 
-div#menu_principal h1 {
+.menu_principal h1 {
     font-family: 'Acme', sans-serif;
     font-size: 22pt;
     text-transform: uppercase;
-    text-shadow: 2px 2px 2px rgb(224, 219, 219);
+    text-shadow: 2px 2px 2px #BDBDBD;
     margin-left: 10px;
     margin-top: 20px;
     margin-bottom: 0px;
     font-weight: bold;
-    color: rgb(89, 146, 98);
+    color: white;
 }
 
-div#menu_principal h2 {
+.menu_principal h2 {
     font-family: 'Open Sans Condensed', sans-serif;
     margin-left: 10px;
     margin-bottom: 20px;
     font-size: 22px;
-    border-bottom: 1px solid #BDBDBD;
-    box-shadow: 1px 1px 1px #BDBDBD;
     margin-right: 10px;
-    color: white;
 }
 
-
-/*MENU DE NAVEGAÇÃO*/
-
-div#menu_principal {
-    background-color: rgb(58, 57, 57);
-    border: 1px solid #BDBDBD;
+.borda_suave {
+    border-bottom: 1px solid #BDBDBD;
     box-shadow: 1px 1px 1px #BDBDBD;
-    margin-left: 0px;
-    padding: 2px;
-    margin: 4px;
+    border-right: 1px solid #BDBDBD;
 }
 
 
@@ -510,132 +546,123 @@ table.tabela_destacada {
 
 .citacao_abnt {
     alignment-adjust: central;
-    aside#conteudo {
-        background-color: rgba(105, 105, 105, 0.1);
-        background-image: url("../_imagens/logo_cedcinza.png");
-        background-size: 10%;
-        background-image: opacity: 0.5;
-        border: 1px solid #BDBDBD;
-        box-shadow: 1px 1px 1px #BDBDBD;
-        margin: 0px 0px 30px 0px;
-        text-align: justify;
-        margin-left: 0px 0px 30px 0px;
-        margin-top: 40px;
-    }
-    aside#conteudo p {
-        margin: 0 0 1.0em 0;
-        line-height: 1.5em;
-        text-align: justify;
-        text-indent: 2.0em;
-        font-size: 16pt !important;
-    }
-    aside#conteudo a {
-        color: #47a34b;
-        font-size: 16pt !important;
-        font-weight: bold;
-    }
-    aside#conteudo img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto
-    }
-    aside#conteudo h1 {
-        font-family: 'Amaranth', sans-serif;
-        font-size: 24pt;
-        text-transform: uppercase;
-        margin: 10px;
-        font-weight: bold;
-        color: white;
-        text-shadow: 3px 3px 3px rgb(128, 126, 126);
-        ;
-        background: linear-gradient(60deg, #66bb6a, #43a047);
-    }
-    aside#conteudo h3 {
-        font-family: 'Acme', sans-serif;
-        font-size: 28pt;
-        text-transform: uppercase;
-        margin: 10px;
-        font-weight: bold;
-        color: black;
-        text-shadow: 3px 3px 3px rgb(128, 126, 126);
-        ;
-    }
-    .card .card-body {
-        font-size: 12pt !important;
-    }
-    margin-top: 2em;
-    margin-bottom: 1.5em;
-    padding: 1.9em 2em;
-    font-size: 16px;
-    border-radius: 4px;
+    background-color: rgba(105, 105, 105, 0.1);
+    background-image: url("../_imagens/logo_cedcinza.png");
+    background-size: 10%;
+    opacity: 0.5;
+    border: 1px solid #BDBDBD;
+    box-shadow: 1px 1px 1px #BDBDBD;
+    margin: 0px 0px 30px 0px;
+    text-align: justify;
+    margin-left: 0px 0px 30px 0px;
+    margin-top: 40px;
 }
 
+aside#conteudo p {
+    margin: 0 0 1.0em 0;
+    line-height: 1.5em;
+    text-align: justify;
+    text-indent: 2.0em;
+    font-size: 16pt !important;
+}
+
+aside#conteudo a {
+    color: #47a34b;
+    font-size: 16pt !important;
+    font-weight: bold;
+}
+
+aside#conteudo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+aside#conteudo h1 {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 24pt;
+    text-transform: uppercase;
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 3px rgb(128, 126, 126);
+    ;
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+}
+
+aside#conteudo h3 {
+    font-family: 'Acme', sans-serif;
+    font-size: 28pt;
+    text-transform: uppercase;
+    margin: 10px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 3px 3px 3px rgb(128, 126, 126);
+    ;
+}
+
+.card .card-body {
+    font-size: 12pt !important;
+}
+
+margin-top: 2em;
+margin-bottom: 1.5em;
+padding: 1.9em 2em;
+font-size: 16px;
+border-radius: 4px;
+
+}
 
 /* line 749, ../sass/layout.scss */
 
-
 /* line 1390, ../sass/layout.scss */
-
 .citacao_abnt,
 .citacao_abnt * {
     text-indent: 0;
 }
 
-
 /* line 752, ../sass/layout.scss */
 
-
 /* line 1395, ../sass/layout.scss */
-
 .citacao_abnt .citacao_fonte {
     text-align: right;
     margin-bottom: 0;
 }
 
-
 /* line 756, ../sass/layout.scss */
 
-
 /* line 1401, ../sass/layout.scss */
-
 blockquote {
     margin-bottom: 1.5em;
 }
 
-
 /* line 759, ../sass/layout.scss */
 
-
 /* line 1406, ../sass/layout.scss */
-
 blockquote p {
     line-height: 1.4em;
     margin-bottom: 1.25em;
     /* no chrome o alinhamento ficaria melhor com 1.4 */
+    
     padding: 0 2em;
 }
 
-
 /* line 765, ../sass/layout.scss */
 
-
 /* line 1414, ../sass/layout.scss */
-
 blockquote .citacao_fonte {
     text-align: right;
     margin-bottom: 0;
     /*padding:0 2.0em;*/
 }
 
-
 /*-------------------------------------------+
 	|                                            |
 	|                 PONTILHAR                  |
 	|                                            |
 	+-------------------------------------------*/
-
 .pontilhar {
     border-style: dotted;
     border-width: 3px;
@@ -643,63 +670,49 @@ blockquote .citacao_fonte {
     padding: 1.0em 1.0em 1.0em 1.0em;
 }
 
-
 /*-------------------------------------------+
 	|                                            |
 	|                  QUADRO                    |
 	|                                            |
 	+-------------------------------------------*/
-
 hr {
     display: none;
 }
-
 p.quadro {
     margin-bottom: 25px;
     padding-bottom: 10px;
     border-bottom: 3px solid #eee;
 }
 
-
 /*-------------------------------------------+
 	|                                            |
 	|              FOLHA CADERNO                 |
 	|                                            |
 	+-------------------------------------------*/
-
 .folha_caderno {
     padding: 0.9em 2.4em 0.9em 3.4em;
     margin-bottom: 1.5em;
     background: url(../layout/caderno-background.jpg) top left repeat-y;
 }
-
 .folha_caderno h3 {
     margin: 0;
     font-weight: bold;
 }
-
 .folha_caderno p {
     margin: 0;
     padding: 0;
     line-height: 1.5em;
     text-indent: 2.4em;
 }
-
 .navbar .navbar-expand-lg .bg-secondary {
     background: none !important;
 }
 
-
 /* Medium devices (tablets, 768px and up)*/
-
 @media (min-width: 768px) {}
 
-
 /* Large devices (desktops, 992px and up) */
-
 @media (min-width: 992px) {}
 
-
 /* Extra large devices (large desktops, 1200px and up)*/
-
 @media (min-width: 1200px) {}

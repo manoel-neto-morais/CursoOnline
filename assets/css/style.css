@@ -242,11 +242,6 @@ div#print:hover {
     font-weight: bold;
 }
 
-.element {
-    transform: scale(2);
-    /* aumenta 2x o tamanho */
-}
-
 footer {
     box-shadow: 4px -4px 4px #BDBDBD;
     border-top: 1px solid #559F60;
