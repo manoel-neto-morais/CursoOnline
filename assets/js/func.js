@@ -47,3 +47,10 @@ function menoszoom() {
     cont -= 0.1
     x.style.zoom = cont
 }
+
+
+// Aciona os recursos de popover 
+
+$(function() {
+    $('[data-toggle="popover"]').popover()
+})
