@@ -2,6 +2,8 @@ let flag = true
 let cont = 1
 let flagzoom = true
 
+
+
 window.addEventListener("scroll", event => {
     let topo = document.documentElement.scrollTop;
     let altura = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -12,6 +14,7 @@ window.addEventListener("scroll", event => {
         document.querySelector(".progress").style.width = progress + "%";
         document.querySelector(".progress").innerHTML = parseInt(progress) + "%";
     }
+
 
 })
 
