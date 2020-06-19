@@ -54,3 +54,10 @@ function menoszoom() {
 $(function() {
     $('[data-toggle="popover"]').popover()
 })
+$(() => {
+
+    $('#info').on('click', e => {
+        $('[data-toggle="popover"]').popover("toggle");
+    })
+
+});
