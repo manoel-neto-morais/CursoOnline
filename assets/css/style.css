@@ -10,6 +10,11 @@ body {
     background-color: #eee;
 }
 
+.stiky {
+    position: sticky;
+    top: -16px;
+}
+
 
 /*configuração de visualizaçaõ do layout*/
 
@@ -712,6 +717,11 @@ p.quadro {
 @media (min-width: 768px) {
     .calibra {
         zoom: 1;
+    }
+    
+    .stiky {
+        position: sticky;
+        top: 0px;
     }
 }
 
