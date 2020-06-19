@@ -2,6 +2,20 @@ let flag = true
 let cont = 1
 let flagzoom = true
 
+window.addEventListener("scroll", event => {
+    let topo = document.documentElement.scrollTop;
+    let altura = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    let progress = (150 * topo / altura) - 50;
+
+    if (progress > 0) {
+        document.querySelector(".progress").style.width = progress + "%";
+        document.querySelector(".progress").innerHTML = parseInt(progress) + "%";
+    }
+
+})
+
+
 function contraste() {
     let x = document.getElementById("css")
 
@@ -49,6 +63,7 @@ function menoszoom() {
 }
 
 
+
 // Aciona os recursos de popover 
 
 $(function() {
@@ -61,3 +76,9 @@ $(() => {
     })
 
 });
+
+// altera valores padrão do popover
+
+$(function() {
+    $('[data-toggle="popover"]').popover({ html: true })
+})

@@ -125,6 +125,15 @@ body {
 }
 
 
+/*BARRA DE PROGRESSO*/
+
+.progress {
+    height: 20px;
+    width: 0px;
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+}
+
+
 /*TIPOGRAFIA*/
 
 .menu_principal h1 {
