@@ -8,7 +8,7 @@ window.addEventListener("scroll", event => {
     let topo = document.documentElement.scrollTop;
     let altura = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
-    let progress = (150 * topo / altura) - 50;
+    let progress = 100 * topo / altura;
 
     if (progress > 0) {
         document.querySelector(".progress").style.width = progress + "%";
