@@ -78,10 +78,24 @@ $(() => {
         $('[data-toggle="popover"]').popover("toggle");
     })
 
-});
+})
 
 // altera valores padrão do popover
 
 $(function() {
     $('[data-toggle="popover"]').popover({ html: true })
+})
+
+
+
+//chamadas do tooltip
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+$(() => {
+
+    $('#info').on('click', e => {
+        $('[data-toggle="tooltip"]').tooltip("toggle");
+    })
+
 })

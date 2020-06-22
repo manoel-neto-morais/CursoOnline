@@ -22,6 +22,57 @@
         text-align: center;
     }
     /*-------------------------------	
+	---  TOOLTIP
+    -----------------------------*/
+    /* Tooltip container */
+    
+    .tooltips {
+        position: relative;
+        display: inline-block;
+        /* If you want dots under the hoverable text */
+    }
+    /* Tooltip text */
+    
+    .tooltips .tooltiptext {
+        visibility: hidden;
+        width: 4rem;
+        background-color: #559F60;
+        text-align: center;
+        padding: 4px 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        right: 135%;
+        font-size: 12px;
+        /*font-family: 'Open Sans Condensed', sans-serif;*/
+        font-family: 'Acme', sans-serif;
+        opacity: 0;
+        transition: opacity .5s;
+        letter-spacing: 1px;
+    }
+    /* Show the tooltip text when you mouse over the tooltip container */
+    
+    .tooltips:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .tooltips .tooltiptext::after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        /* To the right of the tooltip */
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent transparent #559F60;
+    }
+    /*-------------------------------	
 	---  FORMATAÇÃO DO MENU
 
 -------------------------------*/
