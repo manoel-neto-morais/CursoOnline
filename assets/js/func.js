@@ -99,3 +99,52 @@ $(() => {
     })
 
 })
+
+
+
+//tornando um objeto arrastável
+var dragMe = document.getElementById("drag_me");
+/* o x inicial do drag*/
+dragOfX = 0;
+/* o y inicial do drag */
+dragOfY = 0;
+
+/* ao segurar o elemento */
+function dragStart(e) {
+    /* define o x inicial do drag */
+    dragOfX = e.pageX - dragMe.offsetLeft;
+    /* define o y inicial do drag */
+    dragOfY = e.pageY - dragMe.offsetTop;
+
+    /* adiciona os eventos */
+    addEventListener("mousemove", dragMove);
+    addEventListener("mouseup", dragEnd);
+    addEventListener("touchmove", dragMove);
+    addEventListener("touchend", dragEnd);
+}
+
+/* ao ser arrastado */
+function dragMove(e) {
+    /* atualiza a posição do elemento */
+    dragMe.style.left = (e.pageX - dragOfX) + 'px';
+    dragMe.style.top = (e.pageY - dragOfY + 200) + 'px';
+}
+
+/* ao terminar o drag */
+function dragEnd() {
+    /* remove os eventos */
+    removeEventListener("mousemove", dragMove);
+    removeEventListener("mouseup", dragEnd);
+    removeListener("touchmove", dragMove);
+    removeListener("touchend", dragEnd);
+}
+
+/* adiciona o evento que começa o drag */
+dragMe.addEventListener("mousedown", dragStart);
+
+function changeicon() {
+    var icone = document.querySelector(".access-button")
+    icone.setAttribute("src", "assets/img/libras_verde.png")
+    var popup = document.querySelector(".pop-up")
+    popup.setAttribute("src", "assets/img/popup_verde.png")
+}
