@@ -13,7 +13,7 @@
 
 </head>
 
-<body onpageshow="changeicon()">
+<body onpageshow="changeicon()" onload="calibrazoom()">
 
     <!--HEADER-->
     <header>
@@ -114,7 +114,6 @@
                         </div>
                     </nav>
                     <!--========= NAVBAR - FIM ========= -->
-
                     <form class="form-inline mx-0 d-flex justify-content-center  flex-fill align-items-center">
                         <input class="form-control my-0 mx-0 my-lg-2" type="search" data-animation="true" placeholder="Pesquisar no Google" aria-label="Pesquisar" style="max-width: 12rem; height: 30px;" data-trigger="hover" data-toggle="popover" data-placement="top" title="Surgiu alguma dúvida?"
                             data-content='Que tal dar aquela "googada"? &#129299;'>
@@ -145,8 +144,6 @@
                             </div>
 
                             <div class="p-3 pt-5 mb-0 card_corpo align-items-center">
-                                <br>
-                                <br>
 
                                 <p style="text-align: right;">
                                     <font color="#e55300"><strong>Autores:</strong> Aline Helle Ribeiro Barros<br> Daniel Vasconcelos Rocha<br> Diego Farias Firmino<br> Mariana Teixeira de Castro<br> Túlio Flavio de Vasconcelos<br>
@@ -209,8 +206,6 @@
                             </div>
 
                             <div class="p-3 pt-5 mb-0 card_corpo align-items-center">
-                                <br>
-                                <br>
 
                                 <p style="text-align: right;">
                                     <font color="#e55300"><strong>Autores:</strong> Aline Helle Ribeiro Barros<br> Daniel Vasconcelos Rocha<br> Diego Farias Firmino<br> Mariana Teixeira de Castro<br> Túlio Flavio de Vasconcelos<br>
@@ -243,10 +238,11 @@
 
 
     <!--ÁREA DO FOOTER-->
-
-    <footer class="d-flex flex-column align-items-center justify-content-center p-2">
-        <img src="assets/img/HORIZONTAL.png" class="mt-2" alt="Idocere">
-        <small class="font-italic text-light">&copy; manoelneto</small>
+    <footer>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <img src="assets/img/HORIZONTAL.png" alt="Idocere">
+            <small class="font-italic text-light">&copy; manoelneto</small>
+        </div>
     </footer>
 
     <div vw class="enabled" id="drag_me">

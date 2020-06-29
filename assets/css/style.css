@@ -325,12 +325,14 @@
         box-shadow: 4px -4px 4px #BDBDBD;
         border-top: 1px solid #559F60;
         background: linear-gradient(60deg, #6bb86f, #43a047);
-        height: 10vh;
+        height: 62px;
         width: 100%;
+        padding: 5px;
     }
     
     footer img {
-        width: 16vh;
+        width: 7rem;
+        max-height: 4rem;
     }
     /* ***** CONFIGURAÇÕES DA SECTION PRINCIPAL ******* */
     /* ***** CONFIGURAÇÕES DO MENU DE NAVEGAÇÃO ******* */

@@ -3,7 +3,6 @@ let cont = 1
 let flagzoom = true
 
 
-
 window.addEventListener("scroll", event => {
     let topo = document.documentElement.scrollTop;
     let altura = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -36,7 +35,10 @@ function calibrazoom() {
 
     if (window.innerWidth < 600) {
         cont = 0.7
+        let x = document.getElementById("zoom")
+        x.style.zoom = cont
     }
+
 
 }
 
