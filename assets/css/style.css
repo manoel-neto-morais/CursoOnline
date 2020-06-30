@@ -151,6 +151,7 @@
         font-weight: bold;
         transition: .5s;
         box-shadow: 0px 0px 4px 1px #43a047;
+        cursor: pointer;
     }
     
     .card_head {
