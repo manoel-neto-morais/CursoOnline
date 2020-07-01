@@ -3,6 +3,9 @@ let cont = 1
 let flagzoom = true
 
 
+
+
+
 window.addEventListener("scroll", event => {
     let topo = document.documentElement.scrollTop;
     let altura = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -38,7 +41,6 @@ function calibrazoom() {
         let x = document.getElementById("zoom")
         x.style.zoom = cont
     }
-
 
 }
 
@@ -144,6 +146,8 @@ function dragEnd() {
 /* adiciona o evento que começa o drag */
 dragMe.addEventListener("mousedown", dragStart);
 
+
+/*Altera o icone do tradutor para libras */
 function changeicon() {
     var icone = document.querySelector(".access-button")
     icone.setAttribute("src", "assets/img/libras_verde.png")

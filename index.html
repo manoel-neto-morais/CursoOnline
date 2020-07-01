@@ -96,18 +96,18 @@
 
                             <ul class="nav navbar-nav flex-column nav_menu flex-grow-1">
 
-                                <li class="nav-item active">
-                                    <a class="nav-link active" data-toggle="tab" href="#bt01">Slide 01</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#aba01">Slide 01</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#bt02">Slide 02</a>
+                                    <a class="nav-link" data-toggle="tab" href="#aba02">Slide 02</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#bt03">Slide 03</a>
+                                    <a class="nav-link" data-toggle="tab" href="#aba03">Slide 03</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#bt04">Slide 04</a>
+                                    <a class="nav-link" data-toggle="tab" href="#aba04">Slide 04</a>
                                 </li>
                             </ul>
 
@@ -119,10 +119,10 @@
                             data-content='Que tal dar aquela "googada"? &#129299;'>
                         <button class="btn btn-outline-success p-1 mx-1 d-flex align-items-center" type="submit" style="height: 30px;">Pesquisar</button>
                     </form>
-
-
+                    <div class="gcse-search" data-trigger="hover" data-toggle="popover" data-placement="top" title="Surgiu alguma dúvida?" data-content='Que tal dar aquela "googada"? &#129299;'></div>
 
                     <div class="progress text-white align-items-center justify-content-center mt-1"></div>
+
                 </div>
 
             </div>
@@ -134,7 +134,7 @@
                     <!-- ------------------------------
                         --------------- SLIDE-01 ----------
                         ----------------------------------->
-                    <div class="tab-pane fade show active m-0" id="bt01">
+                    <div class="tab-pane fade show active m-0" id="aba01">
 
                         <div class="d-flex flex-column align-items-center justify-content-center">
 
@@ -183,22 +183,22 @@
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat magni asperiores debitis aliquam praesentium, porro accusamus, necessitatibus suscipit quam, odit ipsam non reprehenderit dolores deleniti? Asperiores sint
                                     dicta voluptatum eveniet.</p>
 
+
                             </div>
 
                         </div>
                         <!--BOTÃO DE AVANÇAR-->
-                        <div class="d-flex justify-content-end">
-                            <a href="#bt02" data-toggle="tab">
+                        <nav class="d-flex justify-content-end nav">
+                            <a class="nav-link" data-toggle="tab" href="#aba02">
                                 <button type="button" class="btn_nav">Próximo</button>
                             </a>
-                        </div>
-
+                        </nav>
                     </div>
 
                     <!-- ------------------------------
                         --------------- SLIDE-02 ----------
                         ----------------------------------->
-                    <div class="tab-pane fade m-0" id="bt02">
+                    <div class="tab-pane fade m-0" id="aba02">
 
                         <div class="d-flex flex-column align-items-center justify-content-center ">
 
@@ -224,11 +224,13 @@
                         </div>
 
                         <!--BOTÃO DE AVANÇAR-->
-                        <div class="d-flex justify-content-between">
-                            <a href="#bt01" data-toggle="tab">
+
+
+                        <div class="d-flex justify-content-between nav">
+                            <a class="nav-link" href="#aba01" data-toggle="tab">
                                 <button type="button" class="btn_nav">Voltar</button>
                             </a>
-                            <a href="#bt03" data-toggle="tab">
+                            <a class="nav-link" href="#aba03" data-toggle="tab">
                                 <button type="button" class="btn_nav">Próximo </button>
                             </a>
                         </div>
@@ -249,6 +251,9 @@
             <small class="font-italic text-light">&copy; manoelneto</small>
         </div>
     </footer>
+
+    <script async src="https://cse.google.com/cse.js?cx=003056516347259366166:c_n9okfbrsg"></script>
+
 
     <div vw class="enabled" id="drag_me">
         <div vw-access-button class="active"></div>
