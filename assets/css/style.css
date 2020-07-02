@@ -445,3 +445,27 @@
     .destaque2>.destaque2_conteudo {
         padding: 0em;
     }
+    
+    .find-in-document-container {
+        background-color: #43a047;
+        box-shadow: 2px 2px 5px 2px #ccc;
+        padding: 8px;
+        right: 0;
+        width: 500px;
+        height: 45px;
+        z-index: 9999;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 25px;
+        border-radius: 25px;
+        position: absolute;
+        right: -465px;
+        transition: 0.4s ease-in;
+    }
+    
+    .find-in-document-container:hover {
+        right: -140px;
+    }
+    
+    .txtFoundInSearch {
+        background-color: rgb(35, 158, 107);
+    }
