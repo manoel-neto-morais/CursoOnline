@@ -115,12 +115,12 @@
                     </nav>
                     <!--========= NAVBAR - FIM ========= -->
 
-                    <!--BARRA DE PESQUISA PRÓPRIA
+                    <!--BARRA DE PESQUISA PRÓPRIA-->
                     <form class="form-inline mx-0 d-flex justify-content-center  flex-fill align-items-center">
                         <input class="form-control my-0 mx-0 my-lg-2" type="search" data-animation="true" placeholder="Pesquisar no Google" aria-label="Pesquisar" style="max-width: 12rem; height: 30px;" data-trigger="hover" data-toggle="popover" data-placement="top" title="Surgiu alguma dúvida?"
                             data-content='Que tal dar aquela "googada"? &#129299;'>
                         <button class="btn btn-outline-success p-1 mx-1 d-flex align-items-center" type="submit" style="height: 30px;">Pesquisar</button>
-                    </form>-->
+                    </form>
                     <!--BARRA DE PESQUISA DO GOOGLE-->
                     <div class="gcse-search" data-trigger="hover" data-toggle="popover" data-placement="top" title="Surgiu alguma dúvida?" data-content='Que tal dar aquela "googada"? &#129299;'></div>
 
@@ -150,20 +150,23 @@
 
                             <div class="p-3 pt-5 mb-0 card_corpo align-items-center">
 
-                                <div class="find-in-document-container form-inline align-items-center mt-0">
-
-                                    <i class="fas fa-search text-white mx-2 mb-2" style="font-size: 18pt;"></i>
-                                    <input type="text" id="txt-to-find" placeholder="Pesquisar" oninput="findInDocument({position: 0})" class="form-control ml-2 mr-0 mb-2" style="width: 150px; height: 30px;">
-                                    <input type="button" value="&#8659;" onclick="findInDocument({position: -1})" class="btn btn-success mb-2 mx-0  p-1" style="height: 30px; box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.74);">
-                                    <input type="button" value="&#8657;" onclick="findInDocument({position: 1})" class="btn btn-success mx-0 mb-2 p-1" style="height: 30px; box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.74);">
+                                <div class="d-flex justify-content-end" style="margin-top: -30px;">
+                                    <div class="search-box find-in-document-container align-items-center">
+                                        <input type="text" id="txt-to-find" class="search-txt" placeholder="Busca" oninput="findInDocument({position: 0})">
+                                        <a onclick="findInDocument({position: 1})" class="search-btn" href="#">
+                                            <i class="fas fa-search"></i>
+                                        </a>
+                                    </div>
                                 </div>
 
-                                <br><br>
+
+
                                 <p style="text-align: right;">
                                     <font color="#e55300"><strong>Autores:</strong> Aline Helle Ribeiro Barros<br> Daniel Vasconcelos Rocha<br> Diego Farias Firmino<br> Mariana Teixeira de Castro<br> Túlio Flavio de Vasconcelos<br>
                                     </font>
                                 </p>
                                 <br>
+
 
                                 <p class="destaque" style="text-align: center; color:#e55300; padding: 8px; font-weight: bolder;">PARTICIPAÇÃO EM EVENTOS CIENTÍFICOS E ARTÍSTICO-CULTURIAS NACIONAIS E INTERNACIONAIS</p>
 

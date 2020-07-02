@@ -22,6 +22,74 @@
         padding: 0%;
         text-align: center;
     }
+    
+    .find-in-document-container {
+        background-color: #43a047;
+        z-index: 9999;
+    }
+    
+    .txtFoundInSearch {
+        background-color: rgb(35, 158, 107);
+    }
+    /*caixa de busca*/
+    
+    .search-box {
+        background: linear-gradient(60deg, #66bb6a, #43a047);
+        height: 50px;
+        border-radius: 40px;
+        padding: 10px;
+        width: max-content;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .search-box a {
+        text-decoration: none;
+    }
+    
+    .search-box:hover>.search-txt {
+        width: 150px;
+        padding: 0 5px;
+    }
+    
+    .search-box:hover>.search-btn {
+        padding: 0 5px;
+    }
+    
+    .search-box>.search-btn {
+        background: white;
+    }
+    
+    .search-btn {
+        width: 30px;
+        height: 30px;
+        background: white;
+        border-radius: 50%;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    .search-btn i {
+        color: #43a047;
+    }
+    
+    .search-txt {
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        color: white;
+        font-size: 14px;
+        transition: 0.2s ease-in;
+        line-height: 25px;
+        width: 0px;
+    }
     /*-------------------------------	
 	---  TOOLTIP
     -----------------------------*/
@@ -445,29 +513,4 @@
     
     .destaque2>.destaque2_conteudo {
         padding: 0em;
-    }
-    
-    .find-in-document-container {
-        background-color: #43a047;
-        box-shadow: 2px 2px 5px 2px #ccc;
-        padding: 8px;
-        right: 0;
-        width: 500px;
-        height: 45px;
-        z-index: 9999;
-        -moz-border-radius: 20px;
-        -webkit-border-radius: 25px;
-        border-radius: 25px;
-        position: absolute;
-        right: -465px;
-        transition: 0.4s ease-in;
-        overflow-x: hidden;
-    }
-    
-    .find-in-document-container:hover {
-        right: -250px;
-    }
-    
-    .txtFoundInSearch {
-        background-color: rgb(35, 158, 107);
     }
