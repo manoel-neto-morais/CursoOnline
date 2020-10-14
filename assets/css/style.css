@@ -10,6 +10,10 @@
         overflow-x: hidden;
     }
     
+    .marginmenos {
+        margin-bottom: -5px;
+    }
+    
     .stiky {
         position: sticky;
         top: -16px;
@@ -421,6 +425,9 @@
     /* Medium devices (tablets, 768px and up)*/
     
     @media (min-width: 768px) {
+        .marginmenos {
+            margin-bottom: 5px;
+        }
         .calibra {
             zoom: 1;
         }
@@ -456,6 +463,9 @@
     /* Extra large devices (large desktops, 1200px and up)*/
     
     @media (min-width: 1200px) {
+        .marginmenos {
+            margin-bottom: 5px;
+        }
         .calibra {
             zoom: 1;
         }
